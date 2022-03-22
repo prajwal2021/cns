@@ -1,7 +1,5 @@
 BEGIN {
 #include<stdio.h>
-}
-{
 pkt=0;time=0;
 }
 {
@@ -12,7 +10,6 @@ time = $2;
 }
 }
 END {
-}
 printf("throughput=%d",(pkt/time)*(8/100000));
 }
 
